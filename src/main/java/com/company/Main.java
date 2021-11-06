@@ -1,30 +1,21 @@
 package com.company;
 
-import com.company.test.ClientA;
-import com.company.test.ClientB;
-import com.company.test.Configuration;
-import com.company.test.IMailSender;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.io.IOException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Main {
-    @Autowired
-    static IMailSender clientA;
-    public static void main(String[] args) {
+//    @Autowired
+//    static IMailSender clientA;
 
-////        ApplicContext context = new ApplicContext("kdkjf");
-////        context.getBean("adf");
-//
-//        SpringApplication.run(Main.class, args);
-//        IMailSender clientA = new ClientA();
-//        IMailSender clientB = new ClientB();
-
-        Configuration config = new Configuration(clientA);
-//        Configuration config2 = new Configuration(clientB);
-
-        config.process();
-
+    public static void main(String[] args) throws IOException {
+        SpringApplication.run(Main.class,args);
+//        final String chromeDriverPath = "D:/alex/drivers/chromedriver.exe";
+//        System.setProperty("webdriver.chrome.driver",chromeDriverPath);
+//        ChromeDriver driver = new ChromeDriver();
+//    Starter starter = new Starter();
+//    starter.start();
     }
 }
