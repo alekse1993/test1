@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "messages": [
+    {
+      "code": "FxMarketUnavailable",
+      "text": "Данные по валютному рынку недоступны",
+      "title": "S02WDK7",
+      "type": "warning",
+      "uuid": "84d72ea1-3943-4dc6-8e43-47273224484f"
+    }
+  ],
+  "body": {
+    "markets": [],
+    "mCalls": [],
+    "agreementId": "S02WDK7",
+    "position": [
+      {
+        "date": "2021-12-22",
+        "total": {
+          "value": "303712.87",
+          "currencyCode": "\u20bd"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "303712.87",
+              "currencyCode": "\u20bd"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "instrumentType": "fxbase",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "1727.51",
+              "currencyCode": "\u20bd"
+            }
+          },
+          {
+            "market": "all",
+            "instrumentType": "fxbase",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "1727.51",
+              "currencyCode": "\u20bd"
+            }
+          }
+
+        ]
+      }
+    ]
+  }
+}

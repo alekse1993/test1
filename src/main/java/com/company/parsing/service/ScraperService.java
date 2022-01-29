@@ -1,7 +1,14 @@
 package com.company.parsing.service;
 
-import org.apache.commons.lang3.StringUtils;
 import com.company.parsing.config.ShuffleList;
+import org.apache.commons.lang3.StringUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.jsoup.nodes.Document;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v95.network.Network;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,29 +18,18 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.annotation.PostConstruct;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.jsoup.nodes.Document;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v95.network.Network;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
+
 public class ScraperService {
     private static final String URL = "https://www.wildberries.ru/catalog/";
-    @Autowired
+
     private ChromeDriver driver;
 
-    @Autowired
+
     private ShuffleList shuffle;
     //    @Value("${path.to.save.html")
     //    String filePath;
 
-    @PostConstruct
     void postConstruct() throws IOException {
         try {
             scrape(shuffle);

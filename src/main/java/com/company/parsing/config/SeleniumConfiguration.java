@@ -1,16 +1,10 @@
 package com.company.parsing.config;
 
-import javax.annotation.PostConstruct;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-//import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
+
 public class SeleniumConfiguration {
 
     @Value("${chrome.driver.path}")
@@ -21,7 +15,7 @@ public class SeleniumConfiguration {
 //    DesiredCapabilities capabilities = new DesiredCapabilities();
 //        capabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, fileDriverPath);
 
-    @PostConstruct
+
     void PostConstruct(){
         System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 
@@ -34,7 +28,7 @@ public class SeleniumConfiguration {
 
     }
 
-    @Bean
+
     public ChromeDriver driver(){
         return new ChromeDriver(options);
     }
