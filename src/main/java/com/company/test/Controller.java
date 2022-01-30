@@ -32,6 +32,8 @@ public class Controller {
     @ResponseBody
     public void serialize() {
         Parser parser = new Parser();
-        parser.serializeStocks(parser.getStocks(parser.getData()));
+//        parser.serializeStocks(parser.getStocks(parser.getData()));
+        parser.serializeStocks(parser.getStocks(parser.getDataFromFile()));
+
     }
 }
