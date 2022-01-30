@@ -1,56 +1,5143 @@
 {
   "success": true,
-  "messages": [
-    {
-      "code": "FxMarketUnavailable",
-      "text": "Данные по валютному рынку недоступны",
-      "title": "S02WDK7",
-      "type": "warning",
-      "uuid": "84d72ea1-3943-4dc6-8e43-47273224484f"
-    }
-  ],
   "body": {
-    "markets": [],
-    "mCalls": [],
     "agreementId": "S02WDK7",
+    "planTotal": {
+      "value": "325082.88",
+      "currencyCode": "₽"
+    },
+    "change": {
+      "value": "-13065.04",
+      "currencyCode": "₽"
+    },
+    "markets": [
+      {
+        "market": "fond",
+        "planTotal": {
+          "value": "325082.88",
+          "currencyCode": "₽"
+        },
+        "change": {
+          "value": "-13065.04",
+          "currencyCode": "₽"
+        }
+      }
+    ],
+    "mCalls": [],
     "position": [
       {
-        "date": "2021-12-22",
+        "date": "2021-12-23",
         "total": {
-          "value": "303712.87",
-          "currencyCode": "\u20bd"
+          "value": "304458.94",
+          "currencyCode": "₽"
         },
         "markets": [
           {
             "market": "fond",
             "total": {
-              "value": "303712.87",
-              "currencyCode": "\u20bd"
+              "value": "304458.94",
+              "currencyCode": "₽"
             }
           }
         ],
         "assets": [
           {
             "market": "fond",
-            "instrumentType": "fxbase",
             "secCode": "RUB",
             "currentCost": {
-              "value": "1727.51",
-              "currencyCode": "\u20bd"
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "22104.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16627.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5030.83",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2951.19",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10217.11",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22390.53",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13138.96",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7550.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22120.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29105.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8362.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "65658.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22944.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14290.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37670.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-24",
+        "total": {
+          "value": "303999.26",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "303999.26",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "22120.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16534.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5035.68",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2954.24",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10243.05",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22616.59",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13207.38",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7475.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22216.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28960.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8299.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "65262.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22956.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14270.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37550.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-27",
+        "total": {
+          "value": "306414.93",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "306414.93",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20992.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16627.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5042.25",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2958.02",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10230.89",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22717.48",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13253.07",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7540.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22728.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29255.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8383.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "66492.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23088.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14667.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38140.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-28",
+        "total": {
+          "value": "309415.78",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "309415.78",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21362.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16751.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5050.61",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2965.57",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10256.84",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22690.54",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13269.70",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7555.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23096.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29530.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8488.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "67956.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23148.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15005.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37992.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-29",
+        "total": {
+          "value": "308977.32",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "308977.32",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21488.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16626.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5049.97",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2961.43",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10231.78",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22792.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13310.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7545.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23376.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29575.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8462.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "67842.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23208.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14602.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37608.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-30",
+        "total": {
+          "value": "311045.67",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "311045.67",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21664.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16685.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5044.82",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2962.09",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10267.73",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22776.96",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13386.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7630.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23432.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29720.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8488.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "68262.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23616.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14665.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38145.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-03",
+        "total": {
+          "value": "316326.97",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "316326.97",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21688.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "17140.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5079.25",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2965.62",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10320.51",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22860.11",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13439.46",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7640.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23604.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "30140.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8731.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "69996.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "24420.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15257.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38745.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-04",
+        "total": {
+          "value": "315573.61",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "315573.61",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21610.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "17343.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5079.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2996.28",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10287.45",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22837.77",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13471.49",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7710.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23644.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "30505.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8808.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "69846.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23280.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15177.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38678.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-05",
+        "total": {
+          "value": "315572.96",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "315572.96",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21708.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "17082.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5082.96",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2998.13",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10315.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22870.63",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13469.92",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7695.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23460.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "30430.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8781.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "70428.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "23124.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15265.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38563.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-06",
+        "total": {
+          "value": "311653.70",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "311653.70",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21556.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16615.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5079.32",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2998.79",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10309.34",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22845.99",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13441.74",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7645.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22940.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29870.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8518.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "69576.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22644.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15040.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38275.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-07",
+        "total": {
+          "value": "311091.76",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "311091.76",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21516.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16656.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5080.67",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2999.45",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10312.29",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22812.16",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13455.57",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7615.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22812.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29925.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8450.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "69660.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22488.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15027.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37982.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-10",
+        "total": {
+          "value": "312341.90",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "312341.90",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21562.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16666.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5077.24",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2990.32",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10333.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22890.04",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13386.46",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7570.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22996.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29640.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8560.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "70746.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22656.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15260.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37708.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-11",
+        "total": {
+          "value": "312481.55",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "312481.55",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21468.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16591.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5081.10",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2952.58",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10349.07",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22817.10",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13349.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7580.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23300.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29545.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8701.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "71082.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22368.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15182.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37814.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-12",
+        "total": {
+          "value": "313584.89",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "313584.89",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "4299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21580.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16527.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5071.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2957.44",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10364.01",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22783.26",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13295.11",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7610.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23372.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29705.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8747.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "71712.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22416.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15210.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37934.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-13",
+        "total": {
+          "value": "323511.34",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "323511.34",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "19299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "19299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21612.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "16102.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5068.31",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2955.09",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10090.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22652.83",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13194.14",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7505.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23084.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "29155.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8697.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "68700.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22308.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15532.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37555.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-14",
+        "total": {
+          "value": "318133.88",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "318133.88",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "19299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "19299.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21162.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "15139.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5049.66",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2899.05",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10043.89",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22276.29",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13142.17",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7235.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22780.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28715.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8494.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "67908.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22152.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15007.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "36830.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-17",
+        "total": {
+          "value": "314901.94",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "314901.94",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "21156.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "10284.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14722.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5074.23",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2891.72",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10035.73",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22128.77",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13161.25",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7170.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "23300.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28170.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8448.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "66072.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "22032.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "15110.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "36628.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-18",
+        "total": {
+          "value": "303720.99",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "303720.99",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20326.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9887.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14010.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5042.09",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2892.38",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9986.67",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21989.13",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13057.48",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6970.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22788.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "27340.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7979.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "61992.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "21264.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14640.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "35040.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-19",
+        "total": {
+          "value": "308393.95",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "308393.95",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "8516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20300.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "10021.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14179.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5026.45",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2893.34",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9954.62",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22056.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13054.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6970.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22844.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "27880.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8297.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "64812.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "21396.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14797.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "35395.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-20",
+        "total": {
+          "value": "328568.69",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "328568.69",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "25516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "25516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20418.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9965.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14454.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5034.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2894.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10079.56",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22024.96",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13078.13",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "7050.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22728.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "27740.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8294.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "66756.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "21864.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14830.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "35841.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-21",
+        "total": {
+          "value": "326538.04",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "326538.04",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "25516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "25516.64",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20272.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9941.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14607.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5040.66",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2894.65",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "10012.51",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "22007.22",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13054.16",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6965.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "21992.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "27560.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "8182.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "66456.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "21588.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14670.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "35779.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-24",
+        "total": {
+          "value": "313214.09",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "313214.09",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "19120.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9414.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "13636.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "5001.23",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2896.63",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9945.34",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21937.90",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13003.24",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6670.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "20944.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "26840.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7613.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "84528.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20736.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "13870.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "36790.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-25",
+        "total": {
+          "value": "313597.84",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "313597.84",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "19282.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9382.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "13776.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "4978.58",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2872.98",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9958.29",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21874.17",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "12951.27",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6675.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "21176.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "27395.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7569.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "84384.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20760.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14025.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "36270.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-26",
+        "total": {
+          "value": "320843.89",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "320843.89",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "19642.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9666.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "13937.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "4983.44",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2871.24",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9975.23",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21893.23",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "12930.10",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6750.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22016.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28035.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7696.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "87400.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20844.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14397.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "37538.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-27",
+        "total": {
+          "value": "324492.84",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "324492.84",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20184.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "9962.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14443.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "4971.79",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2872.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9973.18",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21852.49",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "12899.13",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6865.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "21888.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28365.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7798.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "88832.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20616.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14617.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38084.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-28",
+        "total": {
+          "value": "325082.88",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "325082.88",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20340.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "10029.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14812.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "4968.15",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2873.46",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9984.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21922.15",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13003.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6995.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22028.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28030.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7686.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "88432.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20796.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14632.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38282.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-30",
+        "total": {
+          "value": "325082.88",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "325082.88",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase",
+            "portfolio": {
+              "iconMarketSymbol": "₽",
+              "useCheckbox": 2,
+              "securities": "Рубли",
+              "planCost": {
+                "value": "267.95",
+                "currencyCode": "₽"
+              }
             }
           },
           {
             "market": "all",
-            "instrumentType": "fxbase",
             "secCode": "RUB",
             "currentCost": {
-              "value": "1727.51",
-              "currencyCode": "\u20bd"
+              "value": "267.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase",
+            "portfolio": {
+              "iconMarketSymbol": "₽",
+              "useCheckbox": 2,
+              "securities": "Рубли",
+              "planCost": {
+                "value": "267.95",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "SIBN",
+            "currentCost": {
+              "value": "20340.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Газпрнефть",
+              "change": {
+                "value": "2138.37",
+                "currencyCode": "₽"
+              },
+              "yield": "11.748234",
+              "currentPrice": {
+                "value": "508.50",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "20340.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "40.00",
+              "balanceCost": {
+                "value": "18201.63",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "SGZH",
+            "currentCost": {
+              "value": "10029.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Сегежа",
+              "change": {
+                "value": "-753.48",
+                "currencyCode": "₽"
+              },
+              "yield": "-6.988003",
+              "currentPrice": {
+                "value": "10.029",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "10029.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "1000.00",
+              "balanceCost": {
+                "value": "10782.48",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "SBERP",
+            "currentCost": {
+              "value": "14812.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Сбербанк-п",
+              "change": {
+                "value": "-2554.54",
+                "currencyCode": "₽"
+              },
+              "yield": "-14.709381",
+              "currentPrice": {
+                "value": "246.87",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "14812.20",
+                "currencyCode": "₽"
+              },
+              "planBalance": "60.00",
+              "balanceCost": {
+                "value": "17366.74",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A1043Z7",
+            "currentCost": {
+              "value": "4968.15",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "БинФарм1P1",
+              "change": {
+                "value": "-53.48",
+                "currencyCode": "₽"
+              },
+              "yield": "-1.064979",
+              "currentPrice": {
+                "value": "993.630137",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "4968.15",
+                "currencyCode": "₽"
+              },
+              "planBalance": "5.00",
+              "balanceCost": {
+                "value": "5021.63",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103RD6",
+            "currentCost": {
+              "value": "2873.46",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ИнфрОблP1",
+              "change": {
+                "value": "-71.68",
+                "currencyCode": "₽"
+              },
+              "yield": "-2.433924",
+              "currentPrice": {
+                "value": "957.819178",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "2873.46",
+                "currencyCode": "₽"
+              },
+              "planBalance": "3.00",
+              "balanceCost": {
+                "value": "2945.14",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103DT2",
+            "currentCost": {
+              "value": "9984.12",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ИСКЧ БО01",
+              "change": {
+                "value": "-233.28",
+                "currencyCode": "₽"
+              },
+              "yield": "-2.283132",
+              "currentPrice": {
+                "value": "998.412329",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "9984.12",
+                "currencyCode": "₽"
+              },
+              "planBalance": "10.00",
+              "balanceCost": {
+                "value": "10217.40",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A103943",
+            "currentCost": {
+              "value": "21922.15",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Аэрофл БО1",
+              "change": {
+                "value": "-310.15",
+                "currencyCode": "₽"
+              },
+              "yield": "-1.395039",
+              "currentPrice": {
+                "value": "953.136986",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "21922.15",
+                "currencyCode": "₽"
+              },
+              "planBalance": "23.00",
+              "balanceCost": {
+                "value": "22232.30",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RU000A101GZ6",
+            "currentCost": {
+              "value": "13003.95",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "bond",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "УрКаПБО6P",
+              "change": {
+                "value": "-361.72",
+                "currencyCode": "₽"
+              },
+              "yield": "-2.706308",
+              "currentPrice": {
+                "value": "928.853846",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "13003.95",
+                "currencyCode": "₽"
+              },
+              "planBalance": "14.00",
+              "balanceCost": {
+                "value": "13365.67",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "6995.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Ростел -ап",
+              "change": {
+                "value": "-1415.82",
+                "currencyCode": "₽"
+              },
+              "yield": "-16.833317",
+              "currentPrice": {
+                "value": "69.95",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "6995.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "100.00",
+              "balanceCost": {
+                "value": "8410.82",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "PHOR",
+            "currentCost": {
+              "value": "22028.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ФосАгро ао",
+              "change": {
+                "value": "-1264.13",
+                "currencyCode": "₽"
+              },
+              "yield": "-5.427284",
+              "currentPrice": {
+                "value": "5507.00",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "22028.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "4.00",
+              "balanceCost": {
+                "value": "23292.13",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "MTSS",
+            "currentCost": {
+              "value": "28030.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "МТС-ао",
+              "change": {
+                "value": "-4410.47",
+                "currencyCode": "₽"
+              },
+              "yield": "-13.59558",
+              "currentPrice": {
+                "value": "280.30",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "28030.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "100.00",
+              "balanceCost": {
+                "value": "32440.47",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "IRAO",
+            "currentCost": {
+              "value": "7686.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ИнтерРАОао",
+              "change": {
+                "value": "-1457.09",
+                "currencyCode": "₽"
+              },
+              "yield": "-15.936516",
+              "currentPrice": {
+                "value": "3.843",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "7686.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "2000.00",
+              "balanceCost": {
+                "value": "9143.09",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "GMKN",
+            "currentCost": {
+              "value": "88432.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ГМКНорНик",
+              "change": {
+                "value": "-3007.33",
+                "currencyCode": "₽"
+              },
+              "yield": "-3.28888",
+              "currentPrice": {
+                "value": "22108.00",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "88432.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "4.00",
+              "balanceCost": {
+                "value": "91439.33",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "GEMA",
+            "currentCost": {
+              "value": "20796.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ММЦБ ао",
+              "change": {
+                "value": "1126.38",
+                "currencyCode": "₽"
+              },
+              "yield": "5.726496",
+              "currentPrice": {
+                "value": "866.50",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "20796.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "24.00",
+              "balanceCost": {
+                "value": "19669.62",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "GCHE",
+            "currentCost": {
+              "value": "14632.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ЧеркизГ-ао",
+              "change": {
+                "value": "2323.97",
+                "currencyCode": "₽"
+              },
+              "yield": "18.880971",
+              "currentPrice": {
+                "value": "2926.50",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "14632.50",
+                "currencyCode": "₽"
+              },
+              "planBalance": "5.00",
+              "balanceCost": {
+                "value": "12308.53",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "38282.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "СевСт-ао",
+              "change": {
+                "value": "-2760.60",
+                "currencyCode": "₽"
+              },
+              "yield": "-6.726117",
+              "currentPrice": {
+                "value": "1472.40",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "38282.40",
+                "currencyCode": "₽"
+              },
+              "planBalance": "26.00",
+              "balanceCost": {
+                "value": "41043.00",
+                "currencyCode": "₽"
+              }
             }
           }
-
         ]
       }
     ]
-  }
+  },
+  "messages": [
+    {
+      "title": "S02WDK7",
+      "text": "Данные по валютному рынку недоступны",
+      "type": "warning",
+      "code": "FxMarketUnavailable",
+      "uuid": "03d29fda-0e6e-40fe-8e26-38c52b820d5e"
+    }
+  ]
 }

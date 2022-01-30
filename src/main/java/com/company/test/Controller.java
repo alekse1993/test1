@@ -4,23 +4,33 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @org.springframework.stereotype.Controller
 @RequestMapping(value = {"/api"})
 public class Controller {
     @GetMapping(value ={"/test"})
     @ResponseBody
-    public String test(){
+    public List<Stock> test(){
         Parser parser = new Parser();
         String data = "";
-        parser.stockFromJson(Constants.jsonObject);
-
+        List<Stock> stocks;
+        stocks = parser.getStocks();
+        parser.groupStocks(stocks);
 //        try{
-//            data = parser.getData().toString();
+//            stocks = parser.getStocks(parser.getData());
 //        }
 //        catch(Exception e){
-//            data = e.getMessage();
+//            stocks = parser.getStocks(parser.getData());
 //        }
-        return data;
+
+        return stocks;
     }
 
+    @GetMapping(value ={"/serialize"})
+    @ResponseBody
+    public void serialize() {
+        Parser parser = new Parser();
+        parser.serializeStocks(parser.getStocks(parser.getData()));
+    }
 }
