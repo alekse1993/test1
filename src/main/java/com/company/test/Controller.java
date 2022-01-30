@@ -16,7 +16,8 @@ public class Controller {
         String data = "";
         List<Stock> stocks;
         stocks = parser.getStocks();
-        parser.groupStocks(stocks);
+        System.out.println(stocks);
+//        parser.groupStocks(stocks);
 //        try{
 //            stocks = parser.getStocks(parser.getData());
 //        }

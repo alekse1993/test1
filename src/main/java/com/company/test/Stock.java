@@ -10,6 +10,8 @@ public class Stock implements Serializable {
     private String market;
     private String secCode;
     private String currentCost;
+    private String buyCost;
+    private String count;
 
 }
 
