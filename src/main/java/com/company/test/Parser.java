@@ -3,7 +3,15 @@ package com.company.test;
 import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
+import java.io.File;
+import java.io.FileReader;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import lombok.SneakyThrows;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -63,18 +71,24 @@ public class Parser {
     @SneakyThrows
     public List<Stock> getStocks(JSONObject jsonObject){
         DocumentContext jsonContext = JsonPath.parse(jsonObject.toString());
-        List<Map<String, Object>> jsonpathCreatorName = jsonContext.read("$.body.position[?(@.length-1)].assets[*]");
+        List<Map<String, Object>> jsonpathCreatorName = jsonContext.read("$.body.position[-1:].assets[*]");
         List<Stock> stockList = new ArrayList<>();
         for(Map<String, Object> item : jsonpathCreatorName){
             Stock stock = new Stock();
-            stock.setMarket(item.get("market").toString());
-            stock.setSecCode(item.get("secCode").toString());
-            stock.setCurrentCost(new JSONObject(new Gson().toJson(item.get("currentCost"), Map.class)).getString("value"));
-            stock.setCount(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("planBalance").toString());
-            JSONObject jsonObject1 = (JSONObject) new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("balanceCost");
-            stock.setBuyCost(jsonObject1.getString("value"));
-            stockList.add(stock);
-            System.out.println(stock);
+            try{
+                stock.setMarket(item.get("market").toString());
+                stock.setSecCode(item.get("secCode").toString());
+                stock.setCurrentCost(new JSONObject(new Gson().toJson(item.get("currentCost"), Map.class)).getString("value"));
+
+                stock.setCount(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("planBalance").toString());
+                JSONObject jsonObject1 = (JSONObject) new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("balanceCost");
+                stock.setBuyCost(jsonObject1.getString("value"));
+                stockList.add(stock);
+                System.out.println(stock);
+            }
+            catch(Exception e){
+
+            }
         }
         FileOutputStream fout = new FileOutputStream("C:\\ser\\address.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
@@ -118,6 +132,31 @@ public class Parser {
         FileOutputStream fout = new FileOutputStream("C:\\ser\\address.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
         oos.writeObject(stockList);
+    }
+
+    @SneakyThrows
+    public JSONObject getDataFromFile() {
+        File file = getFileFromResource("data2.json");
+        byte[] encoded = Files.readAllBytes(Paths.get(file.getPath()));
+        String str = new String(encoded, StandardCharsets.UTF_8);
+        JSONObject jsonObject = new JSONObject(str);
+        return jsonObject;
+    }
+
+    private File getFileFromResource(String fileName) throws URISyntaxException {
+
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource(fileName);
+        if (resource == null) {
+            throw new IllegalArgumentException("file not found! " + fileName);
+        } else {
+
+            // failed if files have whitespaces or special characters
+            //return new File(resource.getFile());
+
+            return new File(resource.toURI());
+        }
+
     }
 }
 
