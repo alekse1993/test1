@@ -1,0 +1,1820 @@
+{
+  "success": true,
+  "body": {
+    "agreementId": "S00YR9N",
+    "planTotal": {
+      "value": "12320.38",
+      "currencyCode": "₽"
+    },
+    "change": {
+      "value": "158.81",
+      "currencyCode": "₽"
+    },
+    "markets": [
+      {
+        "market": "fond",
+        "planTotal": {
+          "value": "12320.38",
+          "currencyCode": "₽"
+        },
+        "change": {
+          "value": "158.81",
+          "currencyCode": "₽"
+        }
+      }
+    ],
+    "mCalls": [],
+    "position": [
+      {
+        "date": "2021-12-23",
+        "total": {
+          "value": "2747.45",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2747.45",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "755.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1569.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-24",
+        "total": {
+          "value": "2734.95",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2734.95",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "747.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1564.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-27",
+        "total": {
+          "value": "2766.05",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2766.05",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "754.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1589.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-28",
+        "total": {
+          "value": "2761.35",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2761.35",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "755.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1583.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-29",
+        "total": {
+          "value": "2744.35",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2744.35",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "754.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1567.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2021-12-30",
+        "total": {
+          "value": "2775.25",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2775.25",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "763.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1589.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-03",
+        "total": {
+          "value": "2801.25",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2801.25",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "764.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1614.40",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-04",
+        "total": {
+          "value": "2805.45",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2805.45",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "771.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1611.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-05",
+        "total": {
+          "value": "2799.15",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2799.15",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "769.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1606.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-06",
+        "total": {
+          "value": "2782.15",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2782.15",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "764.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1594.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-07",
+        "total": {
+          "value": "2766.95",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2766.95",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "761.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1582.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-10",
+        "total": {
+          "value": "2751.05",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2751.05",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "757.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1571.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-11",
+        "total": {
+          "value": "2756.45",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2756.45",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "758.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1575.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-12",
+        "total": {
+          "value": "2764.45",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2764.45",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "761.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1580.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-13",
+        "total": {
+          "value": "2738.15",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2738.15",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "750.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1564.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-14",
+        "total": {
+          "value": "2680.95",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "2680.95",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "422.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "723.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1534.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-17",
+        "total": {
+          "value": "12892.05",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12892.05",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "10648.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "10648.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "717.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1526.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-18",
+        "total": {
+          "value": "12804.85",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12804.85",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "10647.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "10647.85",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "RTKMP",
+            "currentCost": {
+              "value": "697.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "0.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "1460.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-19",
+        "total": {
+          "value": "12246.87",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12246.87",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "898.27",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "898.27",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "561.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3115.70",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1772.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5899.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-20",
+        "total": {
+          "value": "12324.03",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12324.03",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "566.65",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3161.90",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1767.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5973.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-21",
+        "total": {
+          "value": "12315.18",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12315.18",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "568.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3141.80",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1786.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5963.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-24",
+        "total": {
+          "value": "11658.18",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "11658.18",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "542.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "2919.30",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1682.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5660.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-25",
+        "total": {
+          "value": "11544.33",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "11544.33",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "535.65",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "2956.30",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1617.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5580.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-26",
+        "total": {
+          "value": "11864.23",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "11864.23",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "537.35",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3016.30",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1680.50",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5775.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-27",
+        "total": {
+          "value": "12142.78",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12142.78",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "558.70",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3174.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1696.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5859.20",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-28",
+        "total": {
+          "value": "12320.38",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12320.38",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase"
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "566.30",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3282.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1727.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt"
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5889.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity"
+          }
+        ]
+      },
+      {
+        "date": "2022-01-30",
+        "total": {
+          "value": "12320.38",
+          "currencyCode": "₽"
+        },
+        "markets": [
+          {
+            "market": "fond",
+            "total": {
+              "value": "12320.38",
+              "currencyCode": "₽"
+            }
+          }
+        ],
+        "assets": [
+          {
+            "market": "fond",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase",
+            "portfolio": {
+              "iconMarketSymbol": "₽",
+              "useCheckbox": 2,
+              "securities": "Рубли",
+              "planCost": {
+                "value": "854.88",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "all",
+            "secCode": "RUB",
+            "currentCost": {
+              "value": "854.88",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "fxbase",
+            "portfolio": {
+              "iconMarketSymbol": "₽",
+              "useCheckbox": 2,
+              "securities": "Рубли",
+              "planCost": {
+                "value": "854.88",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "ROSN",
+            "currentCost": {
+              "value": "566.30",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "Роснефть",
+              "change": {
+                "value": "-18.75",
+                "currencyCode": "₽"
+              },
+              "yield": "-3.204854",
+              "currentPrice": {
+                "value": "566.30",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "566.30",
+                "currencyCode": "₽"
+              },
+              "planBalance": "1.00",
+              "balanceCost": {
+                "value": "585.05",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "GAZP",
+            "currentCost": {
+              "value": "3282.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "ГАЗПРОМ ао",
+              "change": {
+                "value": "72.80",
+                "currencyCode": "₽"
+              },
+              "yield": "2.268054",
+              "currentPrice": {
+                "value": "328.26",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "3282.60",
+                "currencyCode": "₽"
+              },
+              "planBalance": "10.00",
+              "balanceCost": {
+                "value": "3209.80",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "FIVE",
+            "currentCost": {
+              "value": "1727.00",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "depository receipt",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "FIVE-гдр",
+              "change": {
+                "value": "-144.27",
+                "currencyCode": "₽"
+              },
+              "yield": "-7.709737",
+              "currentPrice": {
+                "value": "1727.00",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "1727.00",
+                "currencyCode": "₽"
+              },
+              "planBalance": "1.00",
+              "balanceCost": {
+                "value": "1871.27",
+                "currencyCode": "₽"
+              }
+            }
+          },
+          {
+            "market": "fond",
+            "secCode": "CHMF",
+            "currentCost": {
+              "value": "5889.60",
+              "currencyCode": "₽"
+            },
+            "instrumentType": "equity",
+            "portfolio": {
+              "useCheckbox": 1,
+              "securities": "СевСт-ао",
+              "change": {
+                "value": "249.03",
+                "currencyCode": "₽"
+              },
+              "yield": "4.414979",
+              "currentPrice": {
+                "value": "1472.40",
+                "currencyCode": "₽"
+              },
+              "planCost": {
+                "value": "5889.60",
+                "currencyCode": "₽"
+              },
+              "planBalance": "4.00",
+              "balanceCost": {
+                "value": "5640.57",
+                "currencyCode": "₽"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "messages": [
+    {
+      "title": "S00YR9N",
+      "text": "Данные по валютному рынку недоступны",
+      "type": "warning",
+      "code": "FxMarketUnavailable",
+      "uuid": "53dc0e8d-1a86-4ca6-b119-447b3648b757"
+    }
+  ]
+}
+
