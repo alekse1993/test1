@@ -1,13 +1,14 @@
 package com.company.test.controller;
 
 import com.company.test.model.StockDTO;
+import com.company.test.service.ClientConfiguration;
 import com.company.test.service.Parser;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
@@ -18,6 +19,12 @@ public class Controller {
     @GetMapping(value ={"/test"})
     public List<StockDTO> test(){
         return parser.getStocks();
+    }
+
+    @GetMapping(value ={"/test2"})
+    public String test2(){
+        ClientConfiguration clientConfiguration = new ClientConfiguration();
+        return clientConfiguration.getClient();
     }
 
     @GetMapping(value ={"/serialize"})

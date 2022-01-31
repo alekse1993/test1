@@ -1,17 +1,10 @@
 package com.company.test.service.impl;
 
-import com.company.test.model.GroupStockDTO;
 import com.company.test.model.StockDTO;
 import com.company.test.service.Parser;
 import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import java.io.File;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.json.JSONObject;
@@ -22,10 +15,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -107,31 +102,8 @@ public class ParserImpl implements Parser {
     public List<StockDTO> getStocks() {
         FileInputStream streamIn = new FileInputStream("C:\\ser\\address.ser");
         ObjectInputStream objectinputstream = new ObjectInputStream(streamIn);
-        List<StockDTO> readCase = (List<StockDTO>) objectinputstream.readObject();
-        return readCase;
-    }
-
-    public Map<String, GroupStockDTO> groupStocks(List<StockDTO> stockDTOS) {
-        Map<String, GroupStockDTO> groupStockMap = new HashMap<>();
-
-        for(StockDTO item : stockDTOS){
-            if(!groupStockMap.containsKey(item.getSecCode())){
-                GroupStockDTO groupStockDTO = new GroupStockDTO();
-                groupStockDTO.setSecCode(item.getSecCode());
-                groupStockDTO.setCost(Double.valueOf(item.getCurrentCost()));
-                List<StockDTO> stockDTOList = new ArrayList<>();
-                stockDTOList.add(item);
-                groupStockDTO.setStockDTOS(stockDTOList);
-                groupStockMap.put(item.getSecCode(), groupStockDTO);
-            }
-            else{
-                GroupStockDTO groupStockDTO = groupStockMap.get(item.getSecCode());
-                groupStockDTO.getStockDTOS().add(item);
-                groupStockDTO.setCost(groupStockDTO.getCost() + Double.valueOf(item.getCurrentCost()));
-            }
-        }
-        System.out.println(groupStockMap.get("CHMF").toString());
-        return groupStockMap;
+        List<StockDTO> stockDTOList = (List<StockDTO>) objectinputstream.readObject();
+        return stockDTOList;
     }
 
     @Override
