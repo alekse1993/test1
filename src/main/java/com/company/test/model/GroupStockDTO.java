@@ -1,4 +1,4 @@
-package com.company.test;
+package com.company.test.model;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -10,15 +10,15 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class GroupStock {
+public class GroupStockDTO {
     private String secCode;
     @Setter(AccessLevel.NONE)
     private Integer count;
     private Double cost;
-    private List<Stock> stocks;
+    private List<StockDTO> stockDTOS;
 
     public Integer getCount(){
-        return this.stocks.size();
+        return this.stockDTOS.size();
     }
 
 }

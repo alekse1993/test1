@@ -1,11 +1,11 @@
-package com.company.test;
+package com.company.test.model;
 
 import lombok.Data;
 
 import java.io.Serializable;
 
 @Data
-public class Stock implements Serializable {
+public class StockDTO implements Serializable {
     private static final long serialVersionUID = 6529685098267757690L;
     private String market;
     private String secCode;

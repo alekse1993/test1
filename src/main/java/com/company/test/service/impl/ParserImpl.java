@@ -1,22 +1,25 @@
-package com.company.test;
+package com.company.test.service.impl;
 
+import com.company.test.model.GroupStockDTO;
+import com.company.test.model.StockDTO;
+import com.company.test.service.Parser;
 import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
 import java.io.File;
-import java.io.FileReader;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.FileInputStream;
@@ -27,13 +30,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-
-public class Parser {
+@Service
+@AllArgsConstructor
+public class ParserImpl implements Parser {
 //    @Resource
 //    @Qualifier ("restTemplate")
-    RestTemplate httpClient = new RestTemplate();
+    RestTemplate httpClient;
 
+    @Override
     public JSONObject getData(){
         Map<String,String> body = new HashMap<>();
         HttpHeaders headers = new HttpHeaders();
@@ -68,23 +72,25 @@ public class Parser {
         JSONObject jsonObject = new JSONObject(response.getBody());
         return jsonObject;
     }
+
+    @Override
     @SneakyThrows
-    public List<Stock> getStocks(JSONObject jsonObject){
+    public List<StockDTO> getStocks(JSONObject jsonObject){
         DocumentContext jsonContext = JsonPath.parse(jsonObject.toString());
         List<Map<String, Object>> jsonpathCreatorName = jsonContext.read("$.body.position[-1:].assets[*]");
-        List<Stock> stockList = new ArrayList<>();
+        List<StockDTO> stockDTOList = new ArrayList<>();
         for(Map<String, Object> item : jsonpathCreatorName){
-            Stock stock = new Stock();
+            StockDTO stockDTO = new StockDTO();
             try{
-                stock.setMarket(item.get("market").toString());
-                stock.setSecCode(item.get("secCode").toString());
-                stock.setCurrentCost(new JSONObject(new Gson().toJson(item.get("currentCost"), Map.class)).getString("value"));
+                stockDTO.setMarket(item.get("market").toString());
+                stockDTO.setSecCode(item.get("secCode").toString());
+                stockDTO.setCurrentCost(new JSONObject(new Gson().toJson(item.get("currentCost"), Map.class)).getString("value"));
 
-                stock.setCount(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("planBalance").toString());
+                stockDTO.setCount(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("planBalance").toString());
                 JSONObject jsonObject1 = (JSONObject) new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("balanceCost");
-                stock.setBuyCost(jsonObject1.getString("value"));
-                stockList.add(stock);
-                System.out.println(stock);
+                stockDTO.setBuyCost(jsonObject1.getString("value"));
+                stockDTOList.add(stockDTO);
+                System.out.println(stockDTO);
             }
             catch(Exception e){
 
@@ -92,51 +98,54 @@ public class Parser {
         }
         FileOutputStream fout = new FileOutputStream("C:\\ser\\address.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
-        oos.writeObject(stockList);
-        return stockList;
+        oos.writeObject(stockDTOList);
+        return stockDTOList;
     }
 
+    @Override
     @SneakyThrows
-    public List<Stock> getStocks() {
+    public List<StockDTO> getStocks() {
         FileInputStream streamIn = new FileInputStream("C:\\ser\\address.ser");
         ObjectInputStream objectinputstream = new ObjectInputStream(streamIn);
-        List<Stock> readCase = (List<Stock>) objectinputstream.readObject();
+        List<StockDTO> readCase = (List<StockDTO>) objectinputstream.readObject();
         return readCase;
     }
 
-    public Map<String, GroupStock> groupStocks(List<Stock> stocks) {
-        Map<String, GroupStock> groupStockMap = new HashMap<>();
+    public Map<String, GroupStockDTO> groupStocks(List<StockDTO> stockDTOS) {
+        Map<String, GroupStockDTO> groupStockMap = new HashMap<>();
 
-        for(Stock item : stocks){
+        for(StockDTO item : stockDTOS){
             if(!groupStockMap.containsKey(item.getSecCode())){
-                GroupStock groupStock = new GroupStock();
-                groupStock.setSecCode(item.getSecCode());
-                groupStock.setCost(Double.valueOf(item.getCurrentCost()));
-                List<Stock> stockList = new ArrayList<>();
-                stockList.add(item);
-                groupStock.setStocks(stockList);
-                groupStockMap.put(item.getSecCode(), groupStock);
+                GroupStockDTO groupStockDTO = new GroupStockDTO();
+                groupStockDTO.setSecCode(item.getSecCode());
+                groupStockDTO.setCost(Double.valueOf(item.getCurrentCost()));
+                List<StockDTO> stockDTOList = new ArrayList<>();
+                stockDTOList.add(item);
+                groupStockDTO.setStockDTOS(stockDTOList);
+                groupStockMap.put(item.getSecCode(), groupStockDTO);
             }
             else{
-                GroupStock groupStock = groupStockMap.get(item.getSecCode());
-                groupStock.getStocks().add(item);
-                groupStock.setCost(groupStock.getCost() + Double.valueOf(item.getCurrentCost()));
+                GroupStockDTO groupStockDTO = groupStockMap.get(item.getSecCode());
+                groupStockDTO.getStockDTOS().add(item);
+                groupStockDTO.setCost(groupStockDTO.getCost() + Double.valueOf(item.getCurrentCost()));
             }
         }
         System.out.println(groupStockMap.get("CHMF").toString());
         return groupStockMap;
     }
 
+    @Override
     @SneakyThrows
-    public void serializeStocks(List<Stock> stockList) {
+    public void serializeStocks(List<StockDTO> stockDTOList) {
         FileOutputStream fout = new FileOutputStream("C:\\ser\\address.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fout);
-        oos.writeObject(stockList);
+        oos.writeObject(stockDTOList);
     }
 
+    @Override
     @SneakyThrows
     public JSONObject getDataFromFile() {
-        File file = getFileFromResource("data2.json");
+        File file = getFileFromResource("data.json");
         byte[] encoded = Files.readAllBytes(Paths.get(file.getPath()));
         String str = new String(encoded, StandardCharsets.UTF_8);
         JSONObject jsonObject = new JSONObject(str);
