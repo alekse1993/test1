@@ -12,6 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -67,8 +69,21 @@ public class ClientConfiguration {
         cookieStore_.addCookie(cookieSKey);
         HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
         HttpResponse response = client.execute(getHttpGet(url));
+        String securityLsKey = null;
+        String content = getContent(response.getEntity());
+        securityLsKey = getSecurityLsKey(content);
+        log.info("securityLsKey: " +  (securityLsKey !=null ? securityLsKey : "empty"));
 
-        return response.toString() + "\n" + "\n" + getContent(response.getEntity());
+        return response.toString() + "\n" + "\n" + content;
+    }
+
+    private String getSecurityLsKey(String str){
+        Pattern pattern = Pattern.compile("LIVESTREET_SECURITY_KEY = \\'(\\w*)\\'");
+        Matcher matcher = pattern.matcher(str);
+        while (matcher.find()) {
+            return matcher.group(1);
+        }
+        return null;
     }
 
     @SneakyThrows
