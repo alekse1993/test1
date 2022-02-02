@@ -12,6 +12,7 @@ public class StockDTO implements Serializable {
     private String currentCost;
     private String buyCost;
     private String count;
+    private String name;
 
 }
 

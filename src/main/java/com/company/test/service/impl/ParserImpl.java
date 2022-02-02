@@ -80,6 +80,7 @@ public class ParserImpl implements Parser {
                 stockDTO.setMarket(item.get("market").toString());
                 stockDTO.setSecCode(item.get("secCode").toString());
                 stockDTO.setCurrentCost(new JSONObject(new Gson().toJson(item.get("currentCost"), Map.class)).getString("value"));
+                stockDTO.setName(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("securities").toString());
 
                 stockDTO.setCount(new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("planBalance").toString());
                 JSONObject jsonObject1 = (JSONObject) new JSONObject(new Gson().toJson(item.get("portfolio"), Map.class)).get("balanceCost");
