@@ -30,7 +30,17 @@ import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.cookie.BasicClientCookie;
+import org.json.JSONObject;
 import org.springframework.context.annotation.Configuration;
+
+import java.io.*;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.zip.GZIPInputStream;
 
 @Slf4j
 @Configuration
@@ -46,7 +56,7 @@ public class ClientConfiguration {
         context.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore_);
 
         HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
-        HttpResponse response = client.execute(getHttpPost(loginUrl), context);
+        HttpResponse response = client.execute(getHttpPost(loginUrl, new StringEntity(getDataString())), context);
 
         List<Cookie> customCookie = context.getCookieStore().getCookies();
         Optional<Cookie> optional1 = customCookie.stream().filter(e->e.getName().equals("skey")).findFirst();
@@ -84,10 +94,20 @@ public class ClientConfiguration {
             return matcher.group(1);
         }
         return null;
+        getTicker("Ростел -ап");
+        return response.toString() + "\n" + "\n" + getContent(response.getEntity());
     }
 
     @SneakyThrows
-    public HttpPost getHttpPost(String url) {
+    private JSONObject getTicker(String name) {
+        HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
+        HttpResponse response = client.execute(getHttpPost("https://smart-lab.ru/q/portfolio-autocomplete-ajax/", new StringEntity(convert(name))));
+        log.info(response.getEntity().getContent().toString());
+        return new JSONObject(response.getEntity());
+    }
+
+    @SneakyThrows
+    public HttpPost getHttpPost(String url, StringEntity stringEntity) {
         HttpPost httpPost = new HttpPost(url);
 
 //        httpPost.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0");
@@ -103,8 +123,6 @@ public class ClientConfiguration {
 //        httpPost.addHeader("Sec-Fetch-Site", "same-origin");
 //        httpPost.addHeader("Sec-Fetch-User", "?1");
         httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
-
-        StringEntity stringEntity = new StringEntity(getDataString());
         httpPost.setEntity(stringEntity);
 
         return httpPost;
@@ -129,6 +147,12 @@ public class ClientConfiguration {
         httpGet.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
         return httpGet;
+    }
+
+    private String convert(String name) throws UnsupportedEncodingException {
+        StringBuilder result = new StringBuilder();
+        result.append(URLEncoder.encode(name, "UTF-8"));
+        return result.toString();
     }
 
     private String getDataString() throws UnsupportedEncodingException {
