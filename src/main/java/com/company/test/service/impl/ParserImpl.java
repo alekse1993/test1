@@ -1,12 +1,21 @@
 package com.company.test.service.impl;
 
+import com.company.test.model.DataUtils;
 import com.company.test.model.StockDTO;
 import com.company.test.service.Parser;
 import com.google.gson.Gson;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicCookieStore;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -25,12 +34,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+@Slf4j
 @Service
-@AllArgsConstructor
 public class ParserImpl implements Parser {
 //    @Resource
 //    @Qualifier ("restTemplate")
     RestTemplate httpClient;
+    CookieStore cookieStore_ = new BasicCookieStore();
 
     @Override
     public JSONObject getData(){
@@ -104,6 +115,7 @@ public class ParserImpl implements Parser {
         FileInputStream streamIn = new FileInputStream("C:\\ser\\address.ser");
         ObjectInputStream objectinputstream = new ObjectInputStream(streamIn);
         List<StockDTO> stockDTOList = (List<StockDTO>) objectinputstream.readObject();
+        getSberLoginData();
         return stockDTOList;
     }
 
@@ -140,8 +152,58 @@ public class ParserImpl implements Parser {
         }
 
     }
+
+    private String getSberLoginData() {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("deviceprint","version=1.7.3&pm_br=Firefox&pm_brmjv=96&iframed=0&intip=&pm_expt=&pm_fpacn=Mozilla&pm_fpan=Netscape&pm_fpasw=&pm_fpco=1&pm_fpjv=0&pm_fpln=lang=ru-RU|syslang=|userlang=&pm_fpol=true&pm_fposp=&pm_fpsaw=1536&pm_fpsbd=&pm_fpsc=24|1536|864|824&pm_fpsdx=&pm_fpsdy=&pm_fpslx=&pm_fpsly=&pm_fpspd=24&pm_fpsui=&pm_fpsw=&pm_fptz=3&pm_fpua=mozilla/5.0 (windows nt 10.0; win64; x64; rv:96.0) gecko/20100101 firefox/96.0|5.0 (Windows)|Win32&pm_fpup=&pm_inpt=&pm_os=Windows&adsblock=0=false|1=false|2=false|3=false|4=false&audio=baseLatency=0|outputLatency=0|sampleRate=48000|state=suspended|maxChannelCount=2|numberOfInputs=1|numberOfOutputs=1|channelCount=2|channelCountMode=max|channelInterpretation=speakers|fftSize=2048|frequencyBinCount=1024|minDecibels=-100|maxDecibels=-30|smoothingTimeConstant=0.8&pm_fpsfse=true&webgl=ver=webgl2|vendor=Google Inc. (Intel)|render=ANGLE (Intel(R) HD Graphics 400 Direct3D11 vs_5_0 ps_5_0, D3D11-27.20.100.8681)");
+        params.put("jsEvents", "");
+        params.put("domElements", "");
+        params.put("operation", "button.begin");
+        params.put("login","");
+        params.put("pageInputType", "INDEX");
+        params.put("password", "Pa$$w0rd");
+        params.put("loginStored", "true");
+        return DataUtils.urlEncoded(params);
+    }
+
+    @SneakyThrows
+    private HttpPost getHttpPost(String url, StringEntity stringEntity) {
+        HttpPost httpPost = new HttpPost(url);
+
+        httpPost.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0");
+        httpPost.addHeader("Accept", "application/json, text/plain, */*");
+        httpPost.addHeader("Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3");
+        //        httpPost.addHeader("Accept-Encoding", "gzip, deflate, br");
+        httpPost.addHeader("Referer", "https://online.sberbank.ru/CSAFront/index.do");
+        httpPost.addHeader("Origin", "https://online.sberbank.ru");
+        httpPost.addHeader("Connection", "keep-alive");
+        httpPost.addHeader("Sec-Fetch-Dest", "empty");
+        httpPost.addHeader("Sec-Fetch-Mode", "cors");
+        httpPost.addHeader("Sec-Fetch-Site", "same-origin");
+        httpPost.addHeader("Sec-Fetch-User", "?1");
+        httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpPost.addHeader("Page-Id", "#/");
+        httpPost.addHeader("Content-Length", "1371");
+        httpPost.addHeader("Host", "online.sberbank.ru");
+        httpPost.addHeader("X-TS-AJAX-Request", "true");
+        httpPost.setEntity(stringEntity);
+
+        return httpPost;
+    }
+
+    @SneakyThrows
+    public void loginSber() {
+            HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
+            StringEntity stringEntity = new StringEntity(getSberLoginData());
+            HttpResponse response = client.execute(getHttpPost("https://online.sberbank.ru/CSAFront/authMainJson.do", stringEntity));
+            String responseBody = EntityUtils.toString(response.getEntity());
+            responseBody = responseBody.replace("[", "").replace("]", "");
+            log.info(responseBody);
+
+    }
 }
 
+//    ESAWEBJSESSIONID
 
 
 

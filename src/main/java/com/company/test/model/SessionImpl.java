@@ -1,20 +1,7 @@
 package com.company.test.model;
 
-import com.company.test.service.Parser;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
@@ -32,11 +19,22 @@ import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 @Slf4j
 public class SessionImpl implements Session{
 	private static SessionImpl instance;
-	private String URL = "https://smart-lab.ru/q/portfolio/LehaNa/47425/";
-	private String LOGIN_URL = "https://smart-lab.ru/login/";
+	private final String URL = "https://smart-lab.ru/q/portfolio/LehaNa/47425/";
+	private final String LOGIN_URL = "https://smart-lab.ru/login/";
+	private final String LOGOUT_URL = "https://smart-lab.ru/login/exit/";
 	private final String ADD_CLEAR_STOCK_URL ="https://smart-lab.ru/q/portfolio-ajax/";
 	String securityLsKey_= null;
 	String skey_ = null;
@@ -47,9 +45,21 @@ public class SessionImpl implements Session{
 	}
 
 	@Override
-	public void start(){
+	public void login(){
 		this.initialize();
 		this.initialized = true;
+	}
+
+	@Override
+	@SneakyThrows
+	public void logout() {
+		if(this.initialized == true) {
+			HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
+			HttpResponse response = client.execute(getHttpGet(LOGOUT_URL + "?security_ls_key=" + this.securityLsKey_));
+			String responseBody = EntityUtils.toString(response.getEntity());
+			responseBody = responseBody.replace("[", "").replace("]", "");
+			log.info("Add: " + responseBody);
+		}
 	}
 
 	public static SessionImpl getInstance(){
@@ -222,7 +232,7 @@ public class SessionImpl implements Session{
 	}
 
 	//#####################
-	private String getDataString() throws UnsupportedEncodingException {
+	private String getDataString() {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("login","lehana2000@mail.ru");
 		params.put("password", "Pa$$w0rd");
@@ -231,14 +241,14 @@ public class SessionImpl implements Session{
 		return DataUtils.urlEncoded(params);
 	}
 
-	private String getDataString2(String name) throws UnsupportedEncodingException {
+	private String getDataString2(String name) {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("json","1");
 		params.put("value", name);
 		return DataUtils.urlEncoded(params);
 	}
 
-	private String getDataString3(String ticker, String securituLsKey, String qty, String price) throws UnsupportedEncodingException {
+	private String getDataString3(String ticker, String securituLsKey, String qty, String price) {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("action","buy");
 		params.put("quantity", qty);
@@ -250,7 +260,7 @@ public class SessionImpl implements Session{
 		return DataUtils.urlEncoded(params);
 	}
 
-	private String getDataString4(String securituLsKey) throws UnsupportedEncodingException {
+	private String getDataString4(String securituLsKey) {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("action","clear_list");
 		params.put("id", "47425");
@@ -259,7 +269,7 @@ public class SessionImpl implements Session{
 		return DataUtils.urlEncoded(params);
 	}
 
-	private String getDataString5(String securituLsKey) throws UnsupportedEncodingException {
+	private String getDataString5(String securituLsKey) {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("action","clear_list");
 		params.put("id", "47425");

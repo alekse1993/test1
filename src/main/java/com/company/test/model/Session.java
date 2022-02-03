@@ -4,5 +4,6 @@ public interface Session {
 	void addStock(StockDTO stock);
 	void clearStocks();
 	void clearBonds();
-	void start();
+	void login();
+	void logout();
 }

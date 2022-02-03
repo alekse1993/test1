@@ -3,10 +3,10 @@ package com.company.test.service;
 import com.company.test.model.Session;
 import com.company.test.model.SessionImpl;
 import com.company.test.model.StockDTO;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.stream.Collectors;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 public class LabService {
@@ -17,14 +17,24 @@ public class LabService {
 		this.parser = parser;
 	}
 
-	public String start(){
+	public String login(){
 		try {
 			this.session = SessionImpl.getInstance();
-			this.session.start();
+			this.session.login();
 			return "Successfully start session and login";
 		}
 		catch(Exception e){
 			return "Error while try to start session and login caused by:\n" + e.getMessage();
+		}
+	}
+
+	public String logout(){
+		try {
+			this.session.logout();
+			return "Successfully end session and logout";
+		}
+		catch(Exception e){
+			return "Error while try to end session and logout caused by:\n" + e.getMessage();
 		}
 	}
 
@@ -74,7 +84,6 @@ public class LabService {
 
 	public List<StockDTO> getStocks() {
 		try{
-			parser.getStocks();
 			return parser.getStocks();
 		}
 		catch(Exception e){
