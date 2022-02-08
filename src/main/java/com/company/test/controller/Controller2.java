@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Controller2 {
     @GetMapping(value ={"/test2"})
     public String test2(Model model){
+
         return "sms";
     }
 
     @GetMapping(value ={"/submit"})
-    @ResponseBody
-    public void getCode(@RequestParam("name") String name){
+    public String getCode(Model model, @RequestParam("name") String name){
         log.info(name);
+        model.addAttribute("text",name);
+        return "sms";
     }
 }

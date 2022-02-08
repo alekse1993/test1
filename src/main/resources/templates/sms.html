@@ -7,9 +7,28 @@
 
 </head>
 <body>
+<form action="/api/login">
+    <button type="submit" value="Логин в лаб">Логин в лаб</button>
+</form>
+<form action="/api/add/all">
+    <button type="submit" value="Добавить акции">Добавить акции</button>
+</form>
+<form action="/api/clear/all">
+    <button type="submit" value="Очистить все">Очистить все</button>
+</form>
+<form action="/api/clear/stocks">
+    <button type="submit" value="Очистить акции">Очистить акции</button>
+</form>
+<form action="/api/clear/bonds">
+    <button type="submit" value="Очистить облигации">Очистить облигации</button>
+</form>
+<form action="/api/logout">
+    <button type="submit" value="Логаут">Логаут</button>
+</form>
 <form action="/submit">
     <input name="name" type="text" value="" /> <br />
     <button type="submit" value="Submit">Submit</button>
 </form>
+<span th:text="${text}"></span>
 </body>
 </html>

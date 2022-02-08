@@ -58,6 +58,7 @@ public class SessionImpl implements Session{
 			HttpResponse response = client.execute(getHttpGet(LOGOUT_URL + "?security_ls_key=" + this.securityLsKey_));
 			String responseBody = EntityUtils.toString(response.getEntity());
 			responseBody = responseBody.replace("[", "").replace("]", "");
+			initialized = false;
 			log.info("Add: " + responseBody);
 		}
 	}

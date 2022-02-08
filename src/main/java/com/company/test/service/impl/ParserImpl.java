@@ -12,9 +12,11 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 import org.springframework.http.HttpEntity;
@@ -41,7 +43,12 @@ public class ParserImpl implements Parser {
 //    @Resource
 //    @Qualifier ("restTemplate")
     RestTemplate httpClient;
-    CookieStore cookieStore_ = new BasicCookieStore();
+    CookieStore cookieStore_;
+
+    public ParserImpl() {
+        this.cookieStore_ =  new BasicCookieStore();
+        // JSESSIONID
+    }
 
     @Override
     public JSONObject getData(){
@@ -182,9 +189,9 @@ public class ParserImpl implements Parser {
         httpPost.addHeader("Sec-Fetch-Site", "same-origin");
         httpPost.addHeader("Sec-Fetch-User", "?1");
         httpPost.addHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpPost.addHeader("Page-Id", "#/");
-        httpPost.addHeader("Content-Length", "1371");
-        httpPost.addHeader("Host", "online.sberbank.ru");
+//        httpPost.addHeader("Page-Id", "#/");
+//        httpPost.addHeader("Content-Length", "1371");
+//        httpPost.addHeader("Host", "online.sberbank.ru");
         httpPost.addHeader("X-TS-AJAX-Request", "true");
         httpPost.setEntity(stringEntity);
 
@@ -195,7 +202,8 @@ public class ParserImpl implements Parser {
     public void loginSber() {
             HttpClient client = HttpClientBuilder.create().setDefaultCookieStore(cookieStore_).build();
             StringEntity stringEntity = new StringEntity(getSberLoginData());
-            HttpResponse response = client.execute(getHttpPost("https://online.sberbank.ru/CSAFront/authMainJson.do", stringEntity));
+            HttpPost httpPost = getHttpPost("https://online.sberbank.ru/CSAFront/authMainJson.do", stringEntity);
+            HttpResponse response = client.execute(httpPost);
             String responseBody = EntityUtils.toString(response.getEntity());
             responseBody = responseBody.replace("[", "").replace("]", "");
             log.info(responseBody);
